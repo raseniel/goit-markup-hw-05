@@ -60,7 +60,7 @@
             <div class="container hero-container">   
             <h1 class="h1-title">
                 Effective Solutions <br> for Your Business</h1>
-            <button class="btn primary form-open" type="button" data-modal-open
+            <button class="btn primary" type="button" data-modal-open
             >Order Service</button>
             </div>
         </section>
@@ -400,28 +400,15 @@
 
     </footer>
 
-    <div class="backdrop is-hidden">
-                <div class="modal-content">
-		<button type="button" class="form-close button" data-modal-close="">
-                <label for="name">Name</label>
-                <input type="text" name="name">
-                <label for="name">Name</label>
-                <input type="text" name="name">
-                </div>
-                <div class="modal-option1-item">
-                    <ul class="modal-option lists">
-                        <li> <svg class="modal-icon" width="80" height="80">
-      <use href="./js/modal.js#icon-Vector-x"></use>
-    </svg></li>
-                        <li><svg class="modal-icon" width="80" height="80">
-      <use href="#Active"></use>
-    </svg></li>
-                    </ul>
-                      
-		 </button>
-       
-                </div> 
-		 </div> 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     
      <script src="./js/modal.js"></script>
 </body>
