@@ -168,6 +168,21 @@ a {
   padding: 0;
 }
 
+.currentoption {
+  position: relative;
+  color: #404bbf;
+}
+
+.currentoption::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  border: 2px solid #404bbf;
+  background-color: #404bbf;
+}
+
 .navbar {
   display: inline-flex;
   margin-left: 76px;
@@ -751,7 +766,12 @@ a {
 
 .modal-close:hover,
 .modal-close:focus {
-  color: var(--primary-orange-color);
+  color: #e7e9fc;
+}
+
+.modal-close {
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
 }
 
 .is-hidden {
