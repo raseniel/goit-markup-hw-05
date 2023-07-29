@@ -674,6 +674,9 @@ a {
 
 .img-pictures a {
   display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .img-pictures a:hover,
@@ -741,6 +744,7 @@ a {
   left: 50%;
   min-width: 408px;
   min-height: 584px;
+  border-radius: 4px;
   background-color: var(--primary-white-color);
 
   transform: translate(-50%, -50%) scale(1);
@@ -759,18 +763,19 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 
-  background-color: #fcfcfc;
-  color: var(--primary-black-color);
+  background-color: #e7e9fc;
+  color: var(--navyblue);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  border-radius: 15px;
+
+  border-radius: 50%;
   cursor: pointer;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon {
@@ -779,12 +784,9 @@ a {
 
 .modal-close:hover,
 .modal-close:focus {
-  color: #e7e9fc;
-}
-
-.modal-close {
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
+  color: white;
+  background-color: #404bbf;
+  border-color: #404bbf;
 }
 
 .is-hidden {
